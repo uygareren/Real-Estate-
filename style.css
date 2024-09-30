@@ -54,7 +54,7 @@
     margin-top: 16px;
 }
 
-#about, #services, #portfolio, #team{
+#about, #services, #portfolio, #team, #contact{
     height: 100vh;
     padding-top: 15vh;
     background-color: #f0f9fc
@@ -69,4 +69,90 @@
     margin-top: 10px;
 }
 
+.icon-item{
+    margin-inline: 4px;
+}
 
+.icon-item i{
+    font-size: 24px;
+}
+
+.username{
+    margin-top: 16px;
+}
+
+
+@media (max-width: 991px){
+    .navbar-nav {
+        text-align: center; /* Yazıları ortalar */
+        width: 100%; /* Tam genişlik kaplar */
+        background-color: white;
+      }
+    
+      .navbar-nav .nav-item {
+        display: inline-block; /* Nav item'leri yan yana dizmek için */
+      }
+    
+      .navbar-nav .nav-link {
+        display: block; /* Mobilde daha iyi görünüm için linkleri blok yap */
+        padding: 10px; /* Biraz boşluk bırak */
+      }
+    
+      /* Eğer navbar'ı sticky bir şekilde sabitlemek istiyorsan */
+      #navbar-container {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+}
+/* Navbar CSS for mobile view */
+@media (max-width: 768px) {
+  
+   
+      .carousel-item {
+    height: 50vh; /* Carousel yüksekliğini küçült */
+  }
+
+  .carousel-item img {
+    height: 100%; /* Resmin carousel'i tam kaplamasını sağlar */
+    object-fit: cover; /* Resmin taşmasını engeller */
+  }
+
+  .carousel-caption {
+    bottom: 90px; /* Alt kenara yakınlaştır */
+    z-index: 2;
+    width: 70%; /* Caption genişliği daralt */
+    padding: 10px;
+    text-align: center; /* Yazıları ortalar */
+    display: block !important; /* Yazıların gizlenmediğinden emin ol */
+  }
+
+  .carousel-caption h5 {
+    font-size: 18px; /* Yazı boyutunu küçült */
+  }
+
+  .carousel-caption p {
+    font-size: 14px; /* Paragraf yazı boyutunu küçült */
+    width: 100%; /* Paragraf genişliği tam ekran yap */
+  }
+
+  .carousel-caption .btn {
+    margin-top: 8px;
+    font-size: 12px; /* Buton yazı boyutunu küçült */
+    padding: 6px 12px; /* Buton padding değerini ayarla */
+  }
+
+  #services{
+    min-height: 200vh;
+  }
+  #portfolio{
+    min-height: 375vh;
+  }
+  #team{
+    min-height: 220vh;
+  }
+
+ 
+}
+  
